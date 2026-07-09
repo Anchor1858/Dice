@@ -1,0 +1,336 @@
+/* ======================================================
+   Global
+====================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+
+    padding: 20px;
+
+    font-family:
+        "Segoe UI",
+        "Microsoft JhengHei",
+        "PingFang TC",
+        "PingFang SC",
+        sans-serif;
+
+    background-color: #ffffff;
+
+    color: #000000;
+
+}
+
+
+/* ======================================================
+   Main Layout
+====================================================== */
+
+.main-panel {
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+}
+
+
+/* ======================================================
+   Header
+====================================================== */
+
+.top-bar {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+#title {
+
+    margin: 0;
+
+    font-size: 36px;
+
+    font-weight: bold;
+
+}
+
+
+/* ======================================================
+   Sentence
+====================================================== */
+
+.sentence {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 4px;
+
+    margin: 12px 0;
+
+    font-size: 18px;
+
+}
+
+
+/* ======================================================
+   Form Controls
+====================================================== */
+
+select,
+input[type="number"] {
+
+    min-width: 70px;
+
+    padding: 4px 8px;
+
+    font-size: 16px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 4px;
+
+    background-color: #ffffff;
+
+}
+
+input[type="number"] {
+
+    text-align: center;
+
+}
+
+
+/* ======================================================
+   Buttons
+====================================================== */
+
+button {
+
+    padding: 6px 14px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 4px;
+
+    background-color: #f5f5f5;
+
+    transition:
+        background-color 0.2s,
+        border-color 0.2s;
+
+}
+
+button:hover {
+
+    background-color: #ebebeb;
+
+    border-color: #999999;
+
+}
+
+
+/* Help Button */
+
+#helpButton {
+
+    background: transparent;
+
+    border: none;
+
+    padding: 0;
+
+    font-size: 20px;
+
+}
+
+#helpButton:hover {
+
+    background: transparent;
+
+}
+
+
+/* ======================================================
+   Custom Target
+====================================================== */
+
+#customTargetArea {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 10px 0;
+
+}
+
+.hidden {
+
+    display: none !important;
+
+}
+
+
+/* ======================================================
+   Result
+====================================================== */
+
+#result {
+
+    margin-top: 20px;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    min-height: 40px;
+
+}
+
+#comment {
+
+    margin-top: 8px;
+
+    color: #777777;
+
+    font-size: 15px;
+
+    min-height: 20px;
+
+}
+
+
+/* ======================================================
+   Dialog
+====================================================== */
+
+dialog {
+
+    max-width: 600px;
+
+    width: 90%;
+
+    border: none;
+
+    border-radius: 8px;
+
+    padding: 24px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+}
+
+dialog::backdrop {
+
+    background: rgba(0,0,0,0.35);
+
+}
+
+#helpTitle {
+
+    margin-top: 0;
+
+}
+
+#helpContent {
+
+    text-align: left;
+
+    line-height: 1.7;
+
+}
+
+#closeHelp {
+
+    margin-top: 16px;
+
+}
+
+
+/* ======================================================
+   Responsive
+====================================================== */
+
+@media (max-width: 768px) {
+
+    body {
+
+        padding: 12px;
+
+    }
+
+    #title {
+
+        font-size: 24px;
+
+    }
+
+    .sentence {
+
+        font-size: 13px;
+
+    }
+
+    select,
+    input[type="number"] {
+
+        min-width: 60px;
+
+        font-size: 13px;
+
+        padding: 3px 6px;
+
+    }
+
+    button {
+
+        font-size: 13px;
+
+        padding: 5px 10px;
+
+    }
+
+    #result {
+
+        font-size: 24px;
+
+    }
+
+    #comment {
+
+        font-size: 12px;
+
+    }
+
+}

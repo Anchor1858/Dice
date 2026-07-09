@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="zh">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Dice Roll Probability Calculator</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+<div class="main-panel">
+
+    <!-- ==========================
+         Header
+    =========================== -->
+
+    <header class="top-bar">
+
+        <h2 id="title"></h2>
+
+        <button
+            id="helpButton"
+            type="button">
+
+            ⓘ
+
+        </button>
+
+        <select id="language"></select>
+
+    </header>
+
+
+    <!-- ==========================
+         Sentence 1
+    =========================== -->
+
+    <div class="sentence">
+
+        <span id="textThrow1"></span>
+
+        <select id="diceCount"></select>
+
+        <span id="textDice"></span>
+
+        <select id="diceSides"></select>
+
+        <span id="textSides"></span>
+
+        <select id="modifier"></select>
+
+        <span id="textTarget"></span>
+
+        <select id="targetMode"></select>
+
+    </div>
+
+
+    <!-- ==========================
+         Custom Target
+    =========================== -->
+
+    <div
+        id="customTargetArea"
+        class="hidden">
+
+        <label
+            id="customTargetLabel"
+            for="customTarget">
+        </label>
+
+        <input
+
+            id="customTarget"
+
+            type="number"
+
+            value="5"
+
+            step="1"
+
+        >
+
+    </div>
+
+
+    <!-- ==========================
+         Sentence 2
+    =========================== -->
+
+    <div class="sentence">
+
+        <span id="textThrow2"></span>
+
+        <select id="times"></select>
+
+        <span id="textTimes"></span>
+
+        <select id="mode"></select>
+
+        <select id="resultType"></select>
+
+        <span id="textProbability"></span>
+
+    </div>
+
+
+    <!-- ==========================
+         Calculate Button
+    =========================== -->
+
+    <button
+
+        id="calcButton"
+
+        type="button">
+
+    </button>
+
+
+    <!-- ==========================
+         Result
+    =========================== -->
+
+    <div id="result">
+
+    </div>
+
+    <div id="comment">
+
+    </div>
+
+</div>
+
+
+<!-- ==========================
+     Help Dialog
+=========================== -->
+
+<dialog id="helpDialog">
+
+    <h3 id="helpTitle">
+
+    </h3>
+
+    <div id="helpContent">
+
+    </div>
+
+    <button
+
+        id="closeHelp"
+
+        type="button">
+
+    </button>
+
+</dialog>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -300,7 +300,6 @@ dialog::backdrop {
 
 @media (max-width: 768px) {
    .mobile-break {
-      display: block;
       flex-basis: 100%;
    }
 

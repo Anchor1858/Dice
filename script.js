@@ -20,9 +20,11 @@ const TEXT = {
 
         dice: "枚",
 
-        sides: "面骰，修正",
+        sides: "面骰，",
 
-        target: '，<span class="mobile-break"></span>目标值',
+        modifier: "修正",
+
+        target: "，目标值",
 
         custom: "其它",
 
@@ -118,7 +120,9 @@ const TEXT = {
 
         dice: "",
 
-        sides: '-sided dice, <span class = "mobile-break"></span>modifier',
+        sides: "-sided dice,",
+
+        modifier: "modifier",
 
         target: ", target",
 
@@ -128,7 +132,7 @@ const TEXT = {
 
         // Sentence 2
 
-        times: 'times, the probability of<span class = "mobile-break"></span>',
+        times: "times, the probability of",
 
         probability: "is:",
 
@@ -236,6 +240,8 @@ const UI = {
     diceSides: document.getElementById("diceSides"),
 
     textSides: document.getElementById("textSides"),
+
+    textModifier: document.getElementById("textModifier"),
 
     modifier: document.getElementById("modifier"),
 
@@ -721,8 +727,9 @@ function updateSentence1() {
 
     UI.textThrow1.textContent = t.throw;
     UI.textDice.textContent = t.dice;
-    UI.textSides.innerHTML = t.sides;
-    UI.textTarget.innerHTML = t.target;
+    UI.textSides.textContent = t.sides;
+    UI.textModifier.textContent = t.modifier;
+    UI.textTarget.textContent = t.target;
     UI.customTargetLabel.textContent = t.customTarget;
 
 
@@ -777,7 +784,7 @@ function updateSentence2() {
     const t = getText();
 
     UI.textThrow2.textContent = t.throw;
-    UI.textTimes.innerHTML = t.times;
+    UI.textTimes.textContent = t.times;
     UI.textProbability.textContent = t.probability;
 
 

@@ -57,8 +57,6 @@ body {
 
     margin-bottom: 20px;
 
-    flex-wrap: wrap;
-
 }
 
 #title {
@@ -91,6 +89,21 @@ body {
     margin: 12px 0;
 
     font-size: 18px;
+
+}
+
+.sentence span {
+
+    white-space: nowrap;
+
+}
+
+
+/* 手机端专用换行 */
+
+.mobile-break {
+
+    display: none;
 
 }
 
@@ -290,15 +303,45 @@ dialog::backdrop {
 
     }
 
+    .top-bar {
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        gap: 8px;
+
+        flex-wrap: nowrap;
+
+    }
+
     #title {
 
-        font-size: 24px;
+        flex: 1;
+
+        text-align: left;
+
+        font-size: 20px;
 
     }
 
     .sentence {
 
         font-size: 13px;
+
+        row-gap: 8px;
+
+        column-gap: 4px;
+
+    }
+
+    .mobile-break {
+
+        display: block;
+
+        flex-basis: 100%;
+
+        height: 0;
 
     }
 

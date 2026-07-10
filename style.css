@@ -294,12 +294,16 @@ dialog::backdrop {
 /* ======================================================
    Responsive
 ====================================================== */
+.mobile-break {
+   display: none;
+}
 
 @media (max-width: 768px) {
+   .mobile-break {
+      display: block;
+      flex-basis: 100%;
+   }
 
-    #textModifier {
-        flex-basis: 100%;
-    }
 
     body {
 

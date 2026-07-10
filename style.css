@@ -297,6 +297,10 @@ dialog::backdrop {
 
 @media (max-width: 768px) {
 
+    #textModifier {
+        flex-basis: 100%;
+    }
+
     body {
 
         padding: 12px;
